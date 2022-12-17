@@ -1,5 +1,10 @@
+const path = require('path')
+
 module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx', '.ts', '.tsx'],
+		alias: {
+			src: path.resolve(__dirname, 'src'),
+		},
 	},
 }
