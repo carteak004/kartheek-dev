@@ -1,3 +1,13 @@
-.threeTabContainer {
+.container {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.two-tab-container {
+	display: flex;
+}
+.vertical-container {
+	width: 40%;
+	text-align: justify;
+	margin-right: 2rem;
 }
