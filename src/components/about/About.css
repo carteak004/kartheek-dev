@@ -1,11 +1,18 @@
 .container {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
+
+.header-container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
 .two-tab-container {
 	display: flex;
 }
+
 .vertical-container {
 	width: 40%;
 	text-align: justify;
