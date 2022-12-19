@@ -1,7 +1,12 @@
 import React from 'react'
+import About from 'components/about'
 
 const App = () => {
-	return <div>App</div>
+	return (
+		<>
+			<About />
+		</>
+	)
 }
 
 export default App
