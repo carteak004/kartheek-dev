@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import LetsTalk from 'components/contact/LetsTalk'
 import SkillsSphere from './SkillsSphere'
 
 const About = () => {
@@ -32,6 +33,7 @@ const About = () => {
 						utilizing data-driven insights to guide development of programs and
 						apps that fill a user need utilizing active listening skills.
 					</h4>
+					<LetsTalk />
 				</div>
 				<div>
 					<SkillsSphere />
