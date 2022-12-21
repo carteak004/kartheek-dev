@@ -1,9 +1,9 @@
 import React from 'react'
-import './About.css'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
-import LetsTalk from 'components/contact/LetsTalk'
+import { LetsTalk } from 'components/contact'
 import SkillsSphere from './SkillsSphere'
+import './About.css'
 
 const About = () => {
 	return (
