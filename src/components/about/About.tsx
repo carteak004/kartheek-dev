@@ -7,7 +7,7 @@ import './About.css'
 
 const About = () => {
 	return (
-		<>
+		<section id='about'>
 			<div className='header-container'>
 				<h5>Get to know</h5>
 				<h2>About me</h2>
@@ -49,7 +49,7 @@ const About = () => {
 					</h6>
 				</div>
 			</div>
-		</>
+		</section>
 	)
 }
 
