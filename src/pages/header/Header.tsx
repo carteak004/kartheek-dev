@@ -1,7 +1,7 @@
 import React from 'react'
 import avtar from 'assets/avtar.png'
 import resume from 'assets/resume.pdf'
-import { LetsTalk } from 'components/contact'
+import LetsTalk from 'components/letsTalk'
 
 const Header = () => {
 	return (

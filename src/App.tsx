@@ -1,7 +1,7 @@
 import React from 'react'
-import About from 'components/about'
-import Header from 'components/header'
-import Nav from 'components/nav'
+import About from 'pages/about'
+import Header from 'pages/header'
+import Nav from 'pages/nav'
 
 const App = () => {
 	return (
