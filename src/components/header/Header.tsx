@@ -5,7 +5,7 @@ import { LetsTalk } from 'components/contact'
 
 const Header = () => {
 	return (
-		<>
+		<section id='header'>
 			<div className='header-container'>
 				<h5>Hello, I'm</h5>
 				<h2>Kartheek Chintalapati</h2>
@@ -23,7 +23,7 @@ const Header = () => {
 				<LetsTalk />
 			</div>
 			<img src={avtar} alt='Avtar' />
-		</>
+		</section>
 	)
 }
 
