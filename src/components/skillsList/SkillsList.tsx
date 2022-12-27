@@ -9,15 +9,17 @@ interface SkillsListProps {
 
 const SkillsList: FC<SkillsListProps> = ({ header, skills }) => {
 	return (
-		<div>
+		<div className='experience-container'>
 			<h2>{header}</h2>
 			<div>
 				{skills.map((skill) => {
 					return (
 						<article>
 							<BsFillPatchCheckFill />
-							<h4>{skill.name}</h4>
-							<small>{skill.experience}</small>
+							<div>
+								<h4>{skill.name}</h4>
+								<small>{skill.experience}</small>
+							</div>
 						</article>
 					)
 				})}

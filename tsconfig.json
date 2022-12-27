@@ -33,6 +33,7 @@
 		"paths": {
 			"assets": ["src/assets"],
 			"components": ["src/components"],
+			"constants": ["src/constants"],
 			"models": ["src/models"],
 			"pages": ["src/pages"]
 		} /* Specify a set of entries that re-map imports to additional lookup locations. */,
