@@ -1,0 +1,11 @@
+.header-container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}

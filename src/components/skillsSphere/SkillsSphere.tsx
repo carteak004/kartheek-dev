@@ -7,54 +7,18 @@ import React, {
 	useRef,
 	useState,
 } from 'react'
+import { skills } from 'constants/Skills'
 import './SkillsSphere.css'
-
-const texts: string[] = [
-	'React Native',
-	'TypeScript',
-	'JavaScript',
-	'React',
-	'Node.js',
-	'REST',
-	'AWS',
-	'MongoDB',
-	'SQL Server',
-	'Oracle SQL',
-	'PostgreSQL',
-	'HTML',
-	'CSS',
-	'JQuery',
-	'PHP',
-	'Python',
-	'JSON',
-	'XML',
-	'VS Code',
-	'Xcode',
-	'Android Studio',
-	'GitHub',
-	'Postman',
-	'Flipper',
-	'Visual Studio',
-	'SSMS',
-	'SQL Developer',
-	'Adobe Photoshop',
-	'Adobe Dreamweaver',
-	'React',
-	'JWT',
-	'Figma',
-	'Git',
-	'Heroku',
-]
 
 const computePosition = (
 	idx: number,
 	random: boolean = false,
 	size: number
 ) => {
-	if (random) idx = Math.floor(Math.random() * (texts.length + 1))
+	if (random) idx = Math.floor(Math.random() * (skills.length + 1))
 
-	const phi = Math.acos(-1 + (2 * idx + 1) / texts.length)
-	const theta = Math.sqrt((texts.length + 1) * Math.PI) * phi
+	const phi = Math.acos(-1 + (2 * idx + 1) / skills.length)
+	const theta = Math.sqrt((skills.length + 1) * Math.PI) * phi
 
 	return {
 		x: (size * Math.cos(theta) * Math.sin(phi)) / 2,
@@ -91,8 +55,8 @@ interface ItemProps {
 }
 
 const createInitialState = (size: number) => {
-	return texts.map((text, i) => {
-		return CreateTag(i, text, size)
+	return skills.map((skill, i) => {
+		return CreateTag(i, skill.name, size)
 	})
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
+import { BiBookAlt } from 'react-icons/bi'
+
 const Nav = () => {
 	return (
 		<nav>
@@ -10,6 +12,9 @@ const Nav = () => {
 			</a>
 			<a href='#about'>
 				<AiOutlineUser />
+			</a>
+			<a href='#experience'>
+				<BiBookAlt />
 			</a>
 		</nav>
 	)

@@ -1,0 +1,33 @@
+.section-container {
+	padding: 2.4rem 5rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	background: burlywood;
+}
+
+.section-container:hover {
+	background: transparent;
+	border-color: gray;
+	cursor: default;
+}
+
+.section-container > h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.section-container > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 2rem;
+}
+
+.skill-article {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.skill-icon {
+	margin-top: 6px;
+}
