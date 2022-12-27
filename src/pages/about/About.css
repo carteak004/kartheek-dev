@@ -3,12 +3,6 @@
 	align-items: center;
 }
 
-.header-container {
-	display: block;
-	align-items: center;
-	justify-content: center;
-}
-
 .two-tab-container {
 	display: flex;
 }

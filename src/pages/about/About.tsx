@@ -2,16 +2,14 @@ import React from 'react'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
 import LetsTalk from 'components/letsTalk'
+import SectionHead from 'components/sectionHead'
 import SkillsSphere from 'components/skillsSphere'
 import './About.css'
 
 const About = () => {
 	return (
 		<section id='about'>
-			<div className='header-container'>
-				<h5>Get to know</h5>
-				<h2>About me</h2>
-			</div>
+			<SectionHead lineOne='Get to know' lineTwo='About me' />
 			<div className='container'>
 				<div className='vertical-container'>
 					<div className='two-tab-container'>
