@@ -2,15 +2,17 @@ import React from 'react'
 import avtar from 'assets/avtar.png'
 import resume from 'assets/resume.pdf'
 import LetsTalk from 'components/letsTalk'
+import SectionHead from 'components/sectionHead'
+import './Intro.css'
 
-const Header = () => {
+const Intro = () => {
 	return (
 		<section id='header'>
-			<div className='header-container'>
-				<h5>Hello, I'm</h5>
-				<h2>Kartheek Chintalapati</h2>
-				<h5>Fullstack Developer</h5>
-			</div>
+			<SectionHead
+				lineOne="Hello, I'm"
+				lineTwo='Kartheek Chintalapati'
+				lineThree='Fullstack Developer'
+			/>
 			<div>
 				<a
 					className='download-resume'
@@ -27,4 +29,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default Intro
