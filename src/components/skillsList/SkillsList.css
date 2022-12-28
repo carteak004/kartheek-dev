@@ -2,18 +2,20 @@
 	padding: 2.4rem 5rem;
 	border-radius: 2rem;
 	border: 1px solid transparent;
-	background: burlywood;
+	background: var(--color-bg-variant);
+	transition: var(--transition);
 }
 
 .section-container:hover {
 	background: transparent;
-	border-color: gray;
+	border-color: var(--color-primary-variant);
 	cursor: default;
 }
 
 .section-container > h3 {
 	text-align: center;
 	margin-bottom: 2rem;
+	color: var(--color-primary);
 }
 
 .section-container > div {
