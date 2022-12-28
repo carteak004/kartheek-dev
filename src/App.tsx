@@ -3,6 +3,7 @@ import About from 'pages/about'
 import Experience from 'pages/experience'
 import Intro from 'pages/intro'
 import Nav from 'pages/nav'
+import Skills from 'pages/skills'
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<Intro />
 			<Nav />
 			<About />
+			<Skills />
 			<Experience />
 		</>
 	)

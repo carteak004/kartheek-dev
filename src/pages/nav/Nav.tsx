@@ -3,7 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiBook } from 'react-icons/bi'
 import { BiMessageSquareDetail } from 'react-icons/bi'
-import { RiServiceLine } from 'react-icons/ri'
+import { MdWorkOutline } from 'react-icons/md'
 import './Nav.css'
 
 const Nav = () => {
@@ -27,18 +27,18 @@ const Nav = () => {
 				<AiOutlineUser />
 			</a>
 			<a
-				href='#experience'
-				onClick={() => setActiveSection('#experience')}
-				className={activeSection === '#experience' ? 'active' : ''}
+				href='#skills'
+				onClick={() => setActiveSection('#skills')}
+				className={activeSection === '#skills' ? 'active' : ''}
 			>
 				<BiBook />
 			</a>
 			<a
-				href='#services'
-				onClick={() => setActiveSection('#services')}
-				className={activeSection === '#services' ? 'active' : ''}
+				href='#experience'
+				onClick={() => setActiveSection('#experience')}
+				className={activeSection === '#experience' ? 'active' : ''}
 			>
-				<RiServiceLine />
+				<MdWorkOutline />
 			</a>
 			<a
 				href='#contact'
