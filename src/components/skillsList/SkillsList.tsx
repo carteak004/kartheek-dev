@@ -15,7 +15,7 @@ const SkillsList: FC<SkillsListProps> = ({ header, skills }) => {
 			<div>
 				{skills.map((skill) => {
 					return (
-						<article className='skill-article'>
+						<article className='skill-article' key={skill.name}>
 							<BsFillPatchCheckFill className='skill-icon' />
 							<div>
 								<h4>{skill.name}</h4>
