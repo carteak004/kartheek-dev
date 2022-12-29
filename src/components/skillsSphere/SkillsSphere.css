@@ -30,8 +30,8 @@
 /* ------------- Media Queries for Small devices ------------- */
 @media screen and (max-width: 600px) {
 	.tag-cloud {
-		/* display: none; */
-		margin: 3rem auto 0;
+		display: none;
+		/* margin: 3rem auto 0; */
 	}
 
 	.tag-cloud-item {

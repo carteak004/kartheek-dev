@@ -19,7 +19,7 @@ const SkillsList: FC<SkillsListProps> = ({ header, skills }) => {
 							<BsFillPatchCheckFill className='skill-icon' />
 							<div>
 								<h4>{skill.name}</h4>
-								<small>{skill.experience}</small>
+								<small className='text-light'>{skill.experience}</small>
 							</div>
 						</article>
 					)
