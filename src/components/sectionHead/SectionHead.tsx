@@ -13,7 +13,7 @@ const SectionHead: FC<SectionHeadProps> = ({ lineOne, lineTwo, lineThree }) => {
 		<div className='head-container'>
 			<h5>{lineOne}</h5>
 			<h2>{lineTwo}</h2>
-			{lineThree ? <h5>{lineThree}</h5> : null}
+			{lineThree ? <h5 className='text-light'>{lineThree}</h5> : null}
 		</div>
 	)
 }

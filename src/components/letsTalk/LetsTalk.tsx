@@ -3,9 +3,9 @@ import './LetsTalk.css'
 
 const LetsTalk = () => {
 	return (
-		<button type='button' className='talk-button'>
+		<a href='#contact' type='button' className='btn btn-primary'>
 			Let's talk
-		</button>
+		</a>
 	)
 }
 
