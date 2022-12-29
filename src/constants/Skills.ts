@@ -7,8 +7,8 @@ export const frontend: Skill[] = [
 	{ name: 'React Native', experience: 'Experienced' },
 	{ name: 'TypeScript', experience: 'Experienced' },
 	{ name: 'React', experience: 'Intermediate' },
-	{ name: 'Ripple UI', experience: 'Basic' },
-	{ name: 'Tailwind', experience: 'Basic' },
+	// { name: 'Ripple UI', experience: 'Basic' },
+	// { name: 'Tailwind', experience: 'Basic' },
 ]
 
 export const backend: Skill[] = [
@@ -16,11 +16,11 @@ export const backend: Skill[] = [
 	{ name: 'REST', experience: 'Experienced' },
 	{ name: 'SQL Server', experience: 'Experienced' },
 	{ name: 'XML', experience: 'Experienced' },
-	{ name: 'JWT', experience: 'Intermediate' },
+	// { name: 'JWT', experience: 'Intermediate' },
 	{ name: 'MongoDB', experience: 'Intermediate' },
 	{ name: 'Node.js', experience: 'Intermediate' },
-	{ name: 'Oracle SQL', experience: 'Basic' },
-	{ name: 'PostgreSQL', experience: 'Basic' },
+	// { name: 'Oracle SQL', experience: 'Basic' },
+	// { name: 'PostgreSQL', experience: 'Basic' },
 ]
 
 export const tools: Skill[] = [

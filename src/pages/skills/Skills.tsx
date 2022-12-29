@@ -8,7 +8,7 @@ const Skills = () => {
 	return (
 		<section id='skills'>
 			<SectionHead lineOne='What I offer' lineTwo='My skills' />
-			<div className='skills-container'>
+			<div className='container skills-container'>
 				<SkillsList header={'Frontend development'} skills={frontend} />
 				<SkillsList header={'Backend development'} skills={backend} />
 			</div>

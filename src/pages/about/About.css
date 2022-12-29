@@ -1,14 +1,76 @@
-.container {
-	display: flex;
-	align-items: center;
+.about-container {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	gap: 10%;
 }
 
-.two-tab-container {
-	display: flex;
+.about-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
 }
 
-.vertical-container {
-	width: 40%;
+.about-card {
+	background: var(--color-bg-variant);
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	transition: var(--transition);
+}
+
+.about-card:hover {
+	background: transparent;
+	border-color: var(--color-primary-variant);
+	cursor: default;
+}
+
+.about-card h5 {
+	font-size: 0.95rem;
+}
+
+.about-card small {
+	font-size: 0.7rem;
+	color: var(--color-light);
+}
+
+.about-icon {
+	color: var(--color-primary);
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.about-content p {
+	margin: 2rem 0 2.6rem;
+	color: var(--color-light);
 	text-align: justify;
-	margin-right: 2rem;
+}
+
+/* TODO: Adjust sphere for media queries */
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.about-container {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.about-content p {
+		margin: 1rem 0 1.5rem;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.about-cards {
+		gap: 1rem;
+	}
+
+	.about-content {
+		text-align: center;
+	}
+
+	.about-content p {
+		margin: 1.5rem 0;
+		text-align: center;
+	}
 }

@@ -1,6 +1,6 @@
 import { Job } from 'models/Job'
 
-export const TCS: Job = {
+export const tcs: Job = {
 	companyName: 'TATA Consultancy Services',
 	responsibilities: [
 		'Provided application support for TATA Sky by resolving issues raised by customers',
@@ -10,7 +10,7 @@ export const TCS: Job = {
 	],
 }
 
-export const Krise: Job = {
+export const krise: Job = {
 	companyName: 'K-Rise Systems',
 	responsibilities: [
 		'Reviewed requirements for the project to understand the scope of what the customer is asking',
@@ -19,7 +19,7 @@ export const Krise: Job = {
 	],
 }
 
-export const Landing: Job = {
+export const landing: Job = {
 	companyName: 'Landing',
 	responsibilities: [
 		'Worked with React Native in TypeScript and JavaScript, occasionally wrote Ruby on Rails code for APIs, PostgreSQL for database',
