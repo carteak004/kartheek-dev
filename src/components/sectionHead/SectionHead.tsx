@@ -5,15 +5,13 @@ import './SectionHead.css'
 interface SectionHeadProps {
 	lineOne: string
 	lineTwo: string
-	lineThree?: string
 }
 
-const SectionHead: FC<SectionHeadProps> = ({ lineOne, lineTwo, lineThree }) => {
+const SectionHead: FC<SectionHeadProps> = ({ lineOne, lineTwo }) => {
 	return (
-		<div className='head-container'>
+		<div className='section-head-container'>
 			<h5>{lineOne}</h5>
 			<h2>{lineTwo}</h2>
-			{lineThree ? <h5 className='text-light'>{lineThree}</h5> : null}
 		</div>
 	)
 }

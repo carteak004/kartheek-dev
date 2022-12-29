@@ -1,34 +1,52 @@
-/* *,
-*::before,
-*::after {
-	box-sizing: border-box;
-	text-rendering: optimizeLegibility;
-} */
-
-/* html,
-body {
-	background: #0e0e0e;
-	box-sizing: border-box;
-	color: white;
-	display: flex;
-	justify-content: center;
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	margin: 0;
-	overflow: hidden;
-} */
-
 .tag-cloud {
 	cursor: pointer;
 	position: relative;
+	top: 2rem;
 }
 
-.tag-cloud__item {
-	font-weight: 800;
+.tag-cloud-item {
+	font-weight: 600;
 	left: 50%;
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	transform-origin: 50% 50%;
 	transition: all 0.1s;
 	will-change: transform, opacity, filter;
+}
+
+.tag-cloud small {
+	position: absolute;
+	bottom: 6rem;
+	right: 0;
+}
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.tag-cloud {
+		margin: 2rem auto 0;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.tag-cloud {
+		/* display: none; */
+		margin: 3rem auto 0;
+	}
+
+	.tag-cloud-item {
+		font-weight: 600;
+		left: 50%;
+		position: absolute;
+		top: 35%;
+		transform-origin: 50% 50%;
+		transition: all 0.1s;
+		will-change: transform, opacity, filter;
+	}
+
+	.tag-cloud small {
+		position: absolute;
+		bottom: 6rem;
+		right: 0;
+	}
 }

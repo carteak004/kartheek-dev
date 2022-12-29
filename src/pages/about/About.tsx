@@ -4,47 +4,32 @@ import { VscFolderLibrary } from 'react-icons/vsc'
 import LetsTalk from 'components/letsTalk'
 import SectionHead from 'components/sectionHead'
 import SkillsSphere from 'components/skillsSphere'
+import { summary } from 'constants/Constants'
 import './About.css'
 
 const About = () => {
 	return (
 		<section id='about'>
 			<SectionHead lineOne='Get to know' lineTwo='About me' />
-			<div className='container'>
-				<div className='vertical-container'>
-					<div className='two-tab-container'>
-						<div>
-							<FaAward />
+			<div className='container about-container'>
+				<div className='about-content'>
+					<div className='about-cards'>
+						<article className='about-card'>
+							<FaAward className='about-icon' />
 							<h5>Experience</h5>
-							<h6>6+ years working</h6>
-						</div>
-						<div>
-							<VscFolderLibrary />
+							<small>6+ years working</small>
+						</article>
+						<article className='about-card'>
+							<VscFolderLibrary className='about-icon' />
 							<h5>Projects</h5>
-							<h6>10+ personal and professional</h6>
-						</div>
+							<small>10+ combined</small>
+						</article>
 					</div>
-					<h4>
-						Results-driven Mobile Engineer skilled to design, develop, and
-						implement software programs for smartphones and other mobile devices
-						with deep knowledge of operating systems, such as Android and iOS
-						utilizing data-driven insights to guide development of programs and
-						apps that fill a user need utilizing active listening skills.
-					</h4>
+					<p>{summary}</p>
 					<LetsTalk />
 				</div>
 				<div>
 					<SkillsSphere />
-					<h6>
-						* Inspired by{' '}
-						<a
-							href='https://codepen.io/ryasan86/pen/bGpqdYV'
-							target='_blank'
-							rel='noreferrer'
-						>
-							Ryan Santos
-						</a>
-					</h6>
 				</div>
 			</div>
 		</section>

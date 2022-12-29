@@ -138,41 +138,48 @@ const SkillsSphere: FC = memo(() => {
 	}, [tagCloudRef])
 
 	return (
-		<>
-			<div
-				ref={tagCloudRef}
-				className='tag-cloud'
-				onMouseMove={(ev) => {
-					if (tagCloudRef?.current) {
-						const rect = tagCloudRef.current.getBoundingClientRect()
-						mouseX.current = (ev.clientX - (rect.left + rect.width / 2)) / 5
-						mouseY.current = (ev.clientY - (rect.top + rect.height / 2)) / 5
-					}
-				}}
-				style={{
-					position: 'relative',
-					width: `${2 * radius}px`,
-					height: `${2 * radius}px`,
-				}}
-			>
-				{items.map((item) => {
-					return (
-						<span
-							key={item.idx}
-							className='tag-cloud__item'
-							ref={item.tagRef}
-							style={{
-								filter: item.filter,
-								opacity: item.opacity,
-								transform: item.transform,
-							}}
-						>
-							{item.text}
-						</span>
-					)
-				})}
-			</div>
-		</>
+		<div
+			ref={tagCloudRef}
+			className='tag-cloud'
+			onMouseMove={(ev) => {
+				if (tagCloudRef?.current) {
+					const rect = tagCloudRef.current.getBoundingClientRect()
+					mouseX.current = (ev.clientX - (rect.left + rect.width / 2)) / 5
+					mouseY.current = (ev.clientY - (rect.top + rect.height / 2)) / 5
+				}
+			}}
+			style={{
+				width: `${2 * radius}px`,
+				height: `${2 * radius}px`,
+			}}
+		>
+			{items.map((item) => {
+				return (
+					<span
+						key={item.idx}
+						className='tag-cloud-item'
+						ref={item.tagRef}
+						style={{
+							filter: item.filter,
+							opacity: item.opacity,
+							transform: item.transform,
+						}}
+					>
+						{item.text}
+					</span>
+				)
+			})}
+			<small>
+				* Inspired by{' '}
+				<a
+					href='https://codepen.io/ryasan86/pen/bGpqdYV'
+					target='_blank'
+					rel='noreferrer'
+				>
+					Ryan Santos
+				</a>
+			</small>
+		</div>
 	)
 })
 
