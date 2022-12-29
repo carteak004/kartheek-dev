@@ -43,3 +43,14 @@
 .responsibilities-list p {
 	font-size: 0.9rem;
 }
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.job-role {
+		height: auto;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+}

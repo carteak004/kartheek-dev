@@ -8,7 +8,7 @@ const Experience = () => {
 	return (
 		<section id='experience'>
 			<SectionHead lineOne='What I contributed' lineTwo='My experience' />
-			<div className='experience-container'>
+			<div className='container experience-container'>
 				<JobRole job={landing} />
 				<JobRole job={krise} />
 				<JobRole job={tcs} />
