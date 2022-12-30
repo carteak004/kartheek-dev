@@ -1,0 +1,34 @@
+.recommendations-container {
+	width: 40%;
+}
+
+.rec {
+	background: var(--color-bg-variant);
+	text-align: center;
+	padding: 2rem;
+	border-radius: 2rem;
+	user-select: none;
+	height: auto;
+}
+
+.rec-message {
+	color: var(--color-light);
+	font-weight: 300;
+	display: block;
+	width: 80%;
+	margin: 0.8rem auto 0;
+}
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.recommendations-container {
+		width: 60%;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.rec-message {
+		width: var(--container-width-sm);
+	}
+}
