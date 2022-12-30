@@ -1,0 +1,23 @@
+.project-container {
+	background: var(--color-bg-variant);
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.project-container:hover {
+	background: var(--color-primary);
+	border-color: var(--color-primary-variant);
+	color: var(--color-white);
+}
+
+.project-container small {
+	color: var(--color-light);
+}
+
+.project-container:hover small {
+	color: var(--color-white);
+}
