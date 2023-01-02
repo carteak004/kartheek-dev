@@ -1,5 +1,6 @@
 .recommendations-container {
 	width: 40%;
+	padding-bottom: 4rem;
 }
 
 .rec {
@@ -19,6 +20,10 @@
 	margin: 0.8rem auto 0;
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet {
+	background: var(--color-primary);
+}
+
 /* ------------- Media Queries for Medium devices ------------- */
 @media screen and (max-width: 1024px) {
 	.recommendations-container {
@@ -28,6 +33,10 @@
 
 /* ------------- Media Queries for Small devices ------------- */
 @media screen and (max-width: 600px) {
+	.recommendations-container {
+		width: var(--container-width-sm);
+	}
+
 	.rec-message {
 		width: var(--container-width-sm);
 	}

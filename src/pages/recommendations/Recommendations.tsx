@@ -1,5 +1,4 @@
 import React from 'react'
-// Core modules imports are same as usual
 import { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css' // core Swiper
