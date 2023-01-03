@@ -11,7 +11,7 @@ module.exports = {
 			models: path.resolve(__dirname, 'models'),
 			pages: path.resolve(__dirname, 'pages'),
 		},
-		test: /\.(png|jpg|jpeg|gif)$/i,
+		test: /\.(png|jpg|jpeg|gif|svg)$/i,
 		type: 'asset/resource',
 	},
 }
