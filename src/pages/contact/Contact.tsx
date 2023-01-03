@@ -15,21 +15,20 @@ const Contact = () => {
 
 		emailjs
 			.sendForm(
-				'service_6i7jpw6',
-				'template_yn63awm',
+				process.env.REACT_APP_EMAILJS_SERVICE_ID || '',
+				process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '',
 				contactForm.current || '',
-				'kA4UunZFtL2CEeIAh'
+				process.env.REACT_APP_EMAILJS_PUBLIC_KEY || ''
 			)
 			.then(
 				(result) => {
 					console.log(result.text)
+					contactForm.current?.reset() // To reset fields after sending the email
 				},
 				(error) => {
 					console.log(error.text)
 				}
 			)
-
-		contactForm.current?.reset() // To reset fields after sending the email
 
 		setIsLoading(false)
 	}
