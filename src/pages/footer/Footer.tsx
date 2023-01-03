@@ -60,29 +60,6 @@ const Footer = () => {
 					<FiInstagram />
 				</a>
 			</div>
-
-			{/* <div className='footer-inspirations'>
-				<small>
-					*Skills sphere adapted from{'  '}
-					<a
-						href='https://codepen.io/ryasan86/pen/bGpqdYV'
-						target='_blank'
-						rel='noreferrer'
-					>
-						Ryan Santos
-					</a>
-				</small>
-				<small>
-					**Website and design adapted from{'  '}
-					<a
-						href='https://www.youtube.com/watch?v=G-Cr00UYokU&t=4163s'
-						target='_blank'
-						rel='noreferrer'
-					>
-						EGATOR
-					</a>
-				</small>
-			</div> */}
 		</footer>
 	)
 }

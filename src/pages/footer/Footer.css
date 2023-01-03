@@ -47,18 +47,6 @@ footer a {
 	border-color: var(--color-bg);
 }
 
-/* .footer-inspirations {
-	margin-bottom: 4rem;
-	color: var(--color-bg);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 2rem;
-}
-
-.footer-inspirations a {
-	color: var(--color-light);
-} */
-
 /* ------------- Media Queries for Small devices ------------- */
 @media screen and (max-width: 600px) {
 	.permalinks {
@@ -69,9 +57,4 @@ footer a {
 	.footer-socials {
 		margin-bottom: 2.6rem;
 	}
-
-	/* .footer-inspirations {
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-	} */
 }
