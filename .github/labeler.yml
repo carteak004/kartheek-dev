@@ -1,5 +1,9 @@
 version: 1
 labels:
+  - label: 'release'
+    title: 'v.*'
+  - label: 'release'
+    title: 'V.*'
   - label: 'feature'
     title: 'Feature.*'
   - label: 'bug'
