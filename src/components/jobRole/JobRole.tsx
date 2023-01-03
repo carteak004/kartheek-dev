@@ -17,7 +17,7 @@ const JobRole: FC<JobRoleProps> = ({ job }) => {
 				{job.responsibilities.map((responsibility) => {
 					return (
 						<li key={responsibility}>
-							<BiCheck className='list-icon' />
+							<BiCheck className='list-icon' width={150} height={150} />
 							<p>{responsibility}</p>
 						</li>
 					)
