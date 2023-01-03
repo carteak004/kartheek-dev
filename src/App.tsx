@@ -2,6 +2,7 @@ import React from 'react'
 import About from 'pages/about'
 import Contact from 'pages/contact'
 import Experience from 'pages/experience'
+import Footer from 'pages/footer'
 import Intro from 'pages/intro'
 import Nav from 'pages/nav'
 import Portfolio from 'pages/portfolio'
@@ -19,6 +20,7 @@ const App = () => {
 			<Portfolio />
 			<Recommendations />
 			<Contact />
+			<Footer />
 		</>
 	)
 }
