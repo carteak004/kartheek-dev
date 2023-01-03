@@ -1,0 +1,56 @@
+.container.contact-container {
+	width: 50%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background: transparent;
+	border: 2px solid var(--color-primary-variant);
+	resize: none;
+	color: var(--color-white);
+}
+
+.spinner {
+	animation-name: spin;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.submit-button:disabled {
+	background: #e7e8e9;
+	color: #9fa3a9;
+	cursor: not-allowed;
+}
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.container.contact-container {
+		width: 70%;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.container.contact-container {
+		width: var(--container-width-sm);
+	}
+}
