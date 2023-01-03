@@ -4,10 +4,12 @@ import React, {
 	RefObject,
 	useCallback,
 	useEffect,
+	useMemo,
 	useRef,
 	useState,
 } from 'react'
 import { skills } from 'constants/Skills'
+import useMediaUtils from 'utils/useMediaUtils'
 import './SkillsSphere.css'
 
 const computePosition = (
@@ -60,28 +62,33 @@ const createInitialState = (size: number) => {
 	})
 }
 
-const { radius, maxSpeed, initSpeed, direction } = {
-	radius: 300 as number,
-	maxSpeed: 20 as number,
-	initSpeed: 40 as number,
-	direction: 135 as number,
-}
-
-const size = 1.5 * radius
-const depth = 2 * radius
-
 const SkillsSphere: FC = memo(() => {
 	const tagCloudRef = useRef<HTMLDivElement | null>(null)
-	const [items, setItems] = useState<ItemProps[]>(createInitialState(size))
 
-	const mouseX0 = useRef<number>(initSpeed * Math.sin(direction * (Math.PI / 180))) // prettier-ignore
-	const mouseY0 = useRef<number>(-initSpeed * Math.cos(direction * (Math.PI / 180))) // prettier-ignore
+	const { radius, maxSpeed, initSpeed, direction } = useMediaUtils()
+
+	const { size, depth } = useMemo(() => {
+		const size = 1.5 * radius
+		const depth = 2 * radius
+
+		return { size, depth }
+	}, [radius])
+
+	const [items, setItems] = useState<ItemProps[]>(createInitialState(size))
+	const mouseX0 = useRef<number>(
+		initSpeed * Math.sin(direction * (Math.PI / 180))
+	)
+	const mouseY0 = useRef<number>(
+		-initSpeed * Math.cos(direction * (Math.PI / 180))
+	)
 	const mouseX = useRef<number>(mouseX0.current)
 	const mouseY = useRef<number>(mouseY0.current)
 
 	const next = useCallback(() => {
-		const a = -(Math.min(Math.max(-mouseY.current, -size), size) / radius) * maxSpeed // prettier-ignore
-		const b = (Math.min(Math.max(-mouseX.current, -size), size) / radius) * maxSpeed // prettier-ignore
+		const a =
+			-(Math.min(Math.max(-mouseY.current, -size), size) / radius) * maxSpeed
+		const b =
+			(Math.min(Math.max(-mouseX.current, -size), size) / radius) * maxSpeed
 
 		if (Math.abs(a) <= 0.01 && Math.abs(b) <= 0.01) return // pause
 
@@ -127,7 +134,7 @@ const SkillsSphere: FC = memo(() => {
 
 			return items
 		})
-	}, [])
+	}, [depth, maxSpeed, radius, size])
 
 	useEffect(() => {
 		if (tagCloudRef?.current) {
@@ -169,16 +176,6 @@ const SkillsSphere: FC = memo(() => {
 					</span>
 				)
 			})}
-			<small>
-				* Inspired by{' '}
-				<a
-					href='https://codepen.io/ryasan86/pen/bGpqdYV'
-					target='_blank'
-					rel='noreferrer'
-				>
-					Ryan Santos
-				</a>
-			</small>
 		</div>
 	)
 })

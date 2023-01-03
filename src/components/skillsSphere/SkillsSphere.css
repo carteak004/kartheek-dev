@@ -30,23 +30,6 @@
 /* ------------- Media Queries for Small devices ------------- */
 @media screen and (max-width: 600px) {
 	.tag-cloud {
-		display: none;
-		/* margin: 3rem auto 0; */
-	}
-
-	.tag-cloud-item {
-		font-weight: 600;
-		left: 50%;
-		position: absolute;
-		top: 35%;
-		transform-origin: 50% 50%;
-		transition: all 0.1s;
-		will-change: transform, opacity, filter;
-	}
-
-	.tag-cloud small {
-		position: absolute;
-		bottom: 6rem;
-		right: 0;
+		margin: 2rem auto 0;
 	}
 }
