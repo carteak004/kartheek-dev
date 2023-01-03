@@ -176,7 +176,7 @@ const SkillsSphere: FC = memo(() => {
 					</span>
 				)
 			})}
-			<small>
+			{/* <small>
 				* Inspired by{' '}
 				<a
 					href='https://codepen.io/ryasan86/pen/bGpqdYV'
@@ -185,7 +185,7 @@ const SkillsSphere: FC = memo(() => {
 				>
 					Ryan Santos
 				</a>
-			</small>
+			</small> */}
 		</div>
 	)
 })

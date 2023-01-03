@@ -61,7 +61,7 @@ const Footer = () => {
 				</a>
 			</div>
 
-			<div className='footer-inspirations'>
+			{/* <div className='footer-inspirations'>
 				<small>
 					*Skills sphere adapted from{'  '}
 					<a
@@ -82,7 +82,7 @@ const Footer = () => {
 						EGATOR
 					</a>
 				</small>
-			</div>
+			</div> */}
 		</footer>
 	)
 }

@@ -47,7 +47,7 @@ footer a {
 	border-color: var(--color-bg);
 }
 
-.footer-inspirations {
+/* .footer-inspirations {
 	margin-bottom: 4rem;
 	color: var(--color-bg);
 	display: grid;
@@ -57,7 +57,7 @@ footer a {
 
 .footer-inspirations a {
 	color: var(--color-light);
-}
+} */
 
 /* ------------- Media Queries for Small devices ------------- */
 @media screen and (max-width: 600px) {
@@ -70,8 +70,8 @@ footer a {
 		margin-bottom: 2.6rem;
 	}
 
-	.footer-inspirations {
+	/* .footer-inspirations {
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
-	}
+	} */
 }
