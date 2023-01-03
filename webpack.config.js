@@ -10,6 +10,7 @@ module.exports = {
 			constans: path.resolve(__dirname, 'constants'),
 			models: path.resolve(__dirname, 'models'),
 			pages: path.resolve(__dirname, 'pages'),
+			utils: path.resolve(__dirname, 'utils'),
 		},
 		test: /\.(png|jpg|jpeg|gif|svg)$/i,
 		type: 'asset/resource',
