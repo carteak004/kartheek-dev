@@ -6,10 +6,13 @@
 .rec {
 	background: var(--color-bg-variant);
 	text-align: center;
-	padding: 2rem;
+	padding: 2rem 1rem;
 	border-radius: 2rem;
 	user-select: none;
 	height: auto;
+}
+.rec-designation {
+	color: var(--color-primary);
 }
 
 .rec-message {

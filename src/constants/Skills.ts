@@ -34,8 +34,8 @@ export const tools: Skill[] = [
 	{ name: 'Git', experience: 'Intermediate' },
 	{ name: 'GitHub', experience: 'Intermediate' },
 	{ name: 'Heroku', experience: 'Intermediate' },
-	{ name: 'Adobe Dreamweaver', experience: 'Basic' },
-	{ name: 'Adobe Photoshop', experience: 'Basic' },
+	{ name: 'Dreamweaver', experience: 'Basic' },
+	{ name: 'Photoshop', experience: 'Basic' },
 	{ name: 'AWS', experience: 'Basic' },
 	{ name: 'SQL Developer', experience: 'Basic' },
 ]
