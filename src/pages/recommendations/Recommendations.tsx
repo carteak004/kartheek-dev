@@ -21,7 +21,8 @@ const Recommendations = () => {
 				{recommendations.map((recommendation, index) => {
 					return (
 						<SwiperSlide className='rec' key={recommendation.name + index}>
-							<h5 className='rec-name'>{recommendation.name}</h5>
+							<h3>{recommendation.name}</h3>
+							<h5 className='rec-designation'>{recommendation.designation}</h5>
 							<small className='rec-message'>{recommendation.message}</small>
 						</SwiperSlide>
 					)
