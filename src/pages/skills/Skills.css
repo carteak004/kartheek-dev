@@ -1,0 +1,19 @@
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.skills-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.skills-container {
+		gap: 1rem;
+	}
+}

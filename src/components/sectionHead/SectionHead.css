@@ -1,0 +1,17 @@
+.section-head-container > h2,
+.section-head-container > h5 {
+	text-align: center;
+	color: var(--color-light);
+}
+
+.section-head-container > h2 {
+	color: var(--color-primary);
+	margin-bottom: 3rem;
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.section-head-container > h2 {
+		margin-bottom: 2rem;
+	}
+}

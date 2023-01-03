@@ -1,0 +1,20 @@
+.experience-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+/* ------------- Media Queries for Medium devices ------------- */
+@media screen and (max-width: 1024px) {
+	.experience-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* ------------- Media Queries for Small devices ------------- */
+@media screen and (max-width: 600px) {
+	.experience-container {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+}
