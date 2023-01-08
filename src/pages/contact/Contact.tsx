@@ -1,5 +1,6 @@
 import React, { FormEvent, useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
+import toast, { Toaster } from 'react-hot-toast'
 import { ReactComponent as Loader } from 'assets/loading.svg'
 import SectionHead from 'components/sectionHead'
 import './Contact.css'
@@ -21,14 +22,32 @@ const Contact = () => {
 				process.env.REACT_APP_EMAILJS_PUBLIC_KEY || ''
 			)
 			.then(
-				(result) => {
-					console.log(result.text)
+				() => {
+					toast.success(
+						<h5>I got your message. Will reply within 2 business days</h5>,
+						{
+							id: 'successToast',
+							duration: 4000,
+							position: 'top-right',
+						}
+					) // id is provided to prevent duplicates
 					contactForm.current?.reset() // To reset fields after sending the email
 				},
-				(error) => {
-					console.log(error.text)
+				() => {
+					toast.error(<h5>Oops! Please try again</h5>, {
+						id: 'errorToast',
+						duration: 4000,
+						position: 'top-right',
+					}) // id is provided to prevent duplicates
 				}
 			)
+			.catch(() => {
+				toast.error(<h5>Oops! Please try again</h5>, {
+					id: 'errorToast',
+					duration: 4000,
+					position: 'top-right',
+				}) // id is provided to prevent duplicates
+			})
 
 		setIsLoading(false)
 	}
@@ -60,6 +79,7 @@ const Contact = () => {
 						{isLaoading ? <Loader className='spinner' /> : 'Send message'}
 					</button>
 				</form>
+				<Toaster toastOptions={{ className: 'contact-toast' }} />
 			</div>
 		</section>
 	)
