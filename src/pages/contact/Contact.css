@@ -19,6 +19,13 @@ textarea {
 	color: var(--color-white);
 }
 
+.contact-toast {
+	padding: 16px;
+	border: 1px solid var(--color-primary-variant);
+	background: var(--color-primary);
+	color: var(--color-white);
+}
+
 .spinner {
 	animation-name: spin;
 	animation-duration: 500ms;
