@@ -16,6 +16,7 @@ const Experience = () => {
 							cssClass={
 								index === 0 ? 'first' : index === jobs.length - 1 ? 'last' : ''
 							}
+							key={`${job.companyName} ${index}`}
 						/>
 					)
 				})}
