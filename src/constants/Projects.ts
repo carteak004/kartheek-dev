@@ -2,6 +2,26 @@ import { Project } from 'models/Project'
 
 export const projects: Project[] = [
 	{
+		name: 'ThryvPay - iOS',
+		description: 'iOS payment app for business',
+		link: 'https://apps.apple.com/us/app/thryvpay/id1554576474',
+	},
+	{
+		name: 'ThryvPay - Android',
+		description: 'Android payment app for business',
+		link: 'https://play.google.com/store/apps/details?id=com.thryv.thryvpay&hl=en_US&gl=US',
+	},
+	{
+		name: 'NYC HOPE Survey - iOS',
+		description: 'iOS app for NYC HOPE',
+		link: 'https://apps.apple.com/us/app/nyc-hope-survey/id1549767507',
+	},
+	{
+		name: 'NYC HOPE Survey - Android',
+		description: 'Android app for NYC HOPE',
+		link: 'https://play.google.com/store/apps/details?id=gov.nyc.dhs.oit.mobile.NYCHOPESurvey&hl=en_US&gl=US&pli=1',
+	},
+	{
 		name: 'Landing member app - iOS',
 		description: 'iOS app for Landing members',
 		link: 'https://apps.apple.com/us/app/landing-furnished-apartments/id1487561384',
