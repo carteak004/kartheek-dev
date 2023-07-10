@@ -1,8 +1,18 @@
 .experience-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	/* display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem; */
 }
+/* .experience-container:first-child {
+	margin-left: 0 !important;
+}
+
+.experience-container:last-child {
+	margin-right: 0 !important;
+} */
 
 /* ------------- Media Queries for Medium devices ------------- */
 @media screen and (max-width: 1024px) {
