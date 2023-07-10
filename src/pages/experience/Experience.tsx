@@ -1,17 +1,25 @@
 import React from 'react'
 import JobRole from 'components/jobRole'
 import SectionHead from 'components/sectionHead'
-import { krise, landing, tcs } from 'constants/Jobs'
 import './Experience.css'
+import { jobs } from 'constants/Jobs'
 
 const Experience = () => {
 	return (
 		<section id='experience'>
 			<SectionHead lineOne='What I contributed' lineTwo='My experience' />
 			<div className='container experience-container'>
-				<JobRole job={landing} />
-				<JobRole job={krise} />
-				<JobRole job={tcs} />
+				{jobs.reverse().map((job, index) => {
+					return (
+						<JobRole
+							job={job}
+							cssClass={
+								index === 0 ? 'first' : index === jobs.length - 1 ? 'last' : ''
+							}
+							key={`${job.companyName} ${index}`}
+						/>
+					)
+				})}
 			</div>
 		</section>
 	)

@@ -1,9 +1,20 @@
+.first {
+	margin-left: 0 !important;
+}
+
+.last {
+	margin-right: 0 !important;
+}
+
 .job-role {
+	flex: 0 0 auto;
 	background: var(--color-bg-variant);
 	border-radius: 0 0 2rem 2rem;
 	border: 1px solid var(--color-primary);
 	height: fit-content;
 	transition: var(--transition);
+	margin: 0 2rem;
+	max-width: 25rem;
 }
 
 .job-role:hover {
